@@ -27,6 +27,7 @@ app.use((err, req, res, next) => {
   });
 });
 
-app.listen(port, () => {
-  console.log(`Backend running on http://localhost:${port}`);
-});
+module.exports = app;
+if (require.main === module) {
+  app.listen(port, () => console.log('Backend running on http://localhost:' + port));
+}
