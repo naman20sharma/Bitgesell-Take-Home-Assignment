@@ -1,2 +1,0 @@
-# Bitgesell-Take-Home-Assignment
-
